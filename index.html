@@ -145,54 +145,86 @@
           </p>
         </div>
 
-        <div class="calendar-table-container">
-          <table class="calendar-table">
-            <thead>
-              <tr>
-                <th>Meses</th>
-                <th>Actividad Agrícola (Fresa)</th>
-                <th>Implicación Fiscal Clave</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="period" data-label="Meses">
-                  <div class="period-icon"><i data-lucide="shovel"></i></div>
-                  <span>Julio - Agosto</span>
-                </td>
-                <td data-label="Actividad Agrícola">Preparación de la tierra y desinfección.</td>
-                <td data-label="Implicación Fiscal">Inicio de la concentración de gastos.</td>
-              </tr>
-              <tr>
-                <td class="period" data-label="Meses">
-                  <div class="period-icon"><i data-lucide="sprout"></i></div>
-                  <span>Septiembre - Noviembre</span>
-                </td>
-                <td data-label="Actividad Agrícola">Plantación y cubrición.</td>
-                <td data-label="Implicación Fiscal">La mayoría de los gastos para los ingresos futuros se acumulan aquí.
-                </td>
-              </tr>
-              <tr>
-                <td class="period" data-label="Meses">
-                  <div class="period-icon"><i data-lucide="flower-2"></i></div>
-                  <span>Diciembre - Enero</span>
-                </td>
-                <td data-label="Actividad Agrícola">Inicio de la Recolección.</td>
-                <td data-label="Implicación Fiscal">Comienzan los ingresos de la campaña.</td>
-              </tr>
-              <tr>
-                <td class="period" data-label="Meses">
-                  <div class="period-icon"><i data-lucide="coins"></i></div>
-                  <span>Enero - Mayo/Junio</span>
-                </td>
-                <td data-label="Actividad Agrícola">Campaña de Recolección (Ingresos Fuertes).</td>
-                <td class="highlight-cell" data-label="Implicación Fiscal">Ingresos principales se concentran.
-                  <br><strong>Necesidad crítica de
-                    periodificación de gastos del año anterior.</strong>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Item 1: Preparación -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i data-lucide="shovel"></i>
+              </div>
+            </div>
+            <div class="timeline-content left">
+              <div class="period-badge">Julio - Agosto</div>
+              <h3>Preparación</h3>
+              <p>Desinfección y preparación de la tierra.</p>
+            </div>
+            <div class="timeline-content right highlight-box">
+              <span class="impact-label">Impacto Fiscal</span>
+              <h3>Inicio de Gastos</h3>
+              <p>Comienzan a acumularse los costes que luego serán deducibles.</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Plantación -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i data-lucide="sprout"></i>
+              </div>
+            </div>
+            <div class="timeline-content left">
+              <div class="period-badge">Septiembre - Noviembre</div>
+              <h3>Plantación</h3>
+              <p>Plantación, cubrición y primeros cuidados intensivos.</p>
+            </div>
+            <div class="timeline-content right highlight-box">
+              <span class="impact-label">Impacto Fiscal</span>
+              <h3>Acumulación Crítica</h3>
+              <p>El grueso de gastos anuales ocurre aquí, sin ingresos todavía.</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Inicio Recolección -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i data-lucide="flower-2"></i>
+              </div>
+            </div>
+            <div class="timeline-content left">
+              <div class="period-badge">Diciembre - Enero</div>
+              <h3>Inicio de Campaña</h3>
+              <p>Primeros frutos y arranque de la recolección.</p>
+            </div>
+            <div class="timeline-content right highlight-box">
+              <span class="impact-label">Impacto Fiscal</span>
+              <h3>Primeros Ingresos</h3>
+              <p>Cambio de flujo: empiezan a entrar divisas en la explotación.</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Recolección Fuerte -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i data-lucide="coins"></i>
+              </div>
+            </div>
+            <div class="timeline-content left">
+              <div class="period-badge">Enero - Mayo/Junio</div>
+              <h3>Recolección Fuerte</h3>
+              <p>Pico de producción y máxima actividad laboral.</p>
+            </div>
+            <div class="timeline-content right highlight-box warning">
+              <span class="impact-label">¡Atención!</span>
+              <h3>Ingresos vs. Gastos Año Anterior</h3>
+              <p>Aquí es crucial la <strong>periodificación</strong>. Si no compensas los gastos del año pasado, pagarás
+                impuestos de más.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
