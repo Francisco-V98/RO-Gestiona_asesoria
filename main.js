@@ -77,6 +77,50 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Mobile Menu Handler
+  const hamburger = document.querySelector('.hamburger-menu');
+  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  const closeMenu = document.querySelector('.close-menu');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+  // Open mobile menu
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scroll
+    });
+  }
+
+  // Close mobile menu
+  if (closeMenu) {
+    closeMenu.addEventListener('click', () => {
+      mobileMenuOverlay.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scroll
+    });
+  }
+
+  // Close menu when clicking on a link
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenuOverlay.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scroll
+    });
+  });
+
+  // Close menu when clicking overlay background
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', (e) => {
+      if (e.target === mobileMenuOverlay) {
+        mobileMenuOverlay.classList.remove('active');
+        hamburger.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scroll
+      }
+    });
+  }
 });
 
 // GSAP Hero Animations

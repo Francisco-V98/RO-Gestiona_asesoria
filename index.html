@@ -25,13 +25,42 @@
       <div class="logo">
         <img src="images/gestiona logo.svg" alt="Gestiona Asesoría" class="logo-img">
       </div>
+
+      <!-- Desktop Nav Links -->
       <div class="nav-links">
         <a href="#calendar">Calendario</a>
         <a href="#solutions">Soluciones</a>
         <a href="#about">Nosotros</a>
         <a href="#contact" class="btn btn-primary small">Contacto</a>
       </div>
+
+      <!-- Mobile Actions -->
+      <div class="mobile-actions">
+        <a href="tel:+34123456789" class="call-button" aria-label="Llamar">
+          <i data-lucide="phone"></i>
+        </a>
+        <button class="hamburger-menu" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-content">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <i data-lucide="x"></i>
+        </button>
+        <nav class="mobile-nav">
+          <a href="#calendar">Calendario</a>
+          <a href="#solutions">Soluciones</a>
+          <a href="#about">Nosotros</a>
+          <a href="#contact" class="btn btn-primary">Contacto</a>
+        </nav>
+      </div>
+    </div>
 
     <!-- Hero Section: Modern & Minimalist -->
     <header class="hero-modern" id="home">
