@@ -1463,33 +1463,32 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 180px;
-    height: 80px;
-    padding: 1rem 2rem;
-    background: white;
-    border: 2px solid var(--border);
-    border-radius: 12px;
+    height: 100px;
+    /* Increased height slightly */
+    padding: 0.5rem 1.5rem;
+    /* filter: grayscale(100%); Removed grayscale */
+    /* opacity: 0.7; Removed opacity */
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
+.client-logo img {
+    max-height: 100%;
+    max-width: 180px;
+    /* Limit max width */
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
 .client-logo:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(240, 90, 26, 0.15);
+    /* filter: grayscale(0%); Removed hover filter change */
+    /* opacity: 1; Removed hover opacity change */
+    transform: scale(1.05);
+    /* Slight zoom instead of translateY */
 }
 
-.client-name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text-muted);
-    transition: color 0.3s ease;
-    white-space: nowrap;
-}
-
-.client-logo:hover .client-name {
-    color: var(--primary);
-}
+/* Removed old .client-name styles as we now use images */
 
 /* Infinite scroll animation */
 @keyframes infiniteScroll {
