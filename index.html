@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -31,15 +33,77 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <!-- Hero Section: Modern & Minimalist -->
+    <header class="hero-modern" id="home">
+      <div class="hero-container">
+        <div class="hero-text-side">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Especialistas en Agro Huelva</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="line-wrapper"><span class="line-reveal">Tus números y</span></span>
+            <span class="line-wrapper"><span class="line-reveal">tu campo en</span></span>
+            <span class="line-wrapper"><span class="line-reveal text-highlight">buenas manos.</span></span>
+          </h1>
+          <p class="hero-subtitle">
+            Gestionamos la contabilidad, fiscalidad y laboral de tu explotación agrícola
+            para que tú te dediques a lo importante: <strong>producir.</strong>
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg magnetic-btn">
+              <span>Solicitar Auditoría Gratis</span>
+              <div class="btn-fill"></div>
+            </a>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Años Exp.</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-number">300+</span>
+                <span class="stat-label">Agricultores</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="hero-content">
-        <h1>Tus números y tu campo <span class="highlight">en buenas manos.</span></h1>
-        <p>En Gestiona somos la asesoría experta en fresa y arándano de Huelva. Entendemos tu ciclo productivo para que
-          pagues solo lo justo.</p>
-        <a href="#contact" class="btn btn-primary">Quiero mi Planificación Fiscal</a>
+        <div class="hero-visual-side">
+          <div class="visual-wrapper">
+            <!-- Main Image Masked -->
+            <div class="main-image-mask">
+              <img src="images/hero-bg-new.png" alt="Consultor y Agricultor" class="hero-img-main data-scroll"
+                data-scroll-speed="0.5">
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="floating-card glass-card card-top-right">
+              <div class="card-icon orange"><i data-lucide="trending-up"></i></div>
+              <div class="card-text">
+                <strong>+20% Rentabilidad</strong>
+                <span>Media anual clientes</span>
+              </div>
+            </div>
+
+            <div class="floating-card glass-card card-bottom-left">
+              <div class="card-icon green"><i data-lucide="check-circle-2"></i></div>
+              <div class="card-text">
+                <strong>Gestión Integral</strong>
+                <span>Fiscal • Laboral • Contable</span>
+              </div>
+            </div>
+
+            <!-- Decorative Abstract Shapes -->
+            <div class="abstract-shape shape-1"></div>
+            <div class="abstract-shape shape-2"></div>
+          </div>
+        </div>
       </div>
+
+      <!-- Background Elements -->
+      <div class="hero-bg-gradient"></div>
+      <img src="images/gestiona-icon.svg" class="hero-bg-logo-watermark" alt="">
     </header>
 
     <!-- Profile Selection Section -->
@@ -359,12 +423,75 @@
       </div>
     </section>
 
+    <!-- Clients Carousel Section -->
+    <section class="clients-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="eyebrow">Confían en nosotros</p>
+          <h2>Más de <span class="highlight">300 agricultores</span> en Huelva</h2>
+        </div>
+
+        <div class="clients-carousel-wrapper">
+          <div class="clients-track">
+            <!-- First set of logos -->
+            <div class="client-logo">
+              <span class="client-name">Fresas del Sur</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">AgroHuelva</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Berries Premium</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Campo Doñana</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Frutos Rojos SA</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Andalucía Fresh</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Costa Berry</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Moguer Agro</span>
+            </div>
+
+            <!-- Duplicate set for infinite loop -->
+            <div class="client-logo">
+              <span class="client-name">Fresas del Sur</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">AgroHuelva</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Berries Premium</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Campo Doñana</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Frutos Rojos SA</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Andalucía Fresh</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Costa Berry</span>
+            </div>
+            <div class="client-logo">
+              <span class="client-name">Moguer Agro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials -->
     <section class="section testimonials-section">
       <div class="container">
-        <h2>La confianza se <span class="highlight">siembra</span></h2>
-        <p class="subtitle">Esto es lo que dicen nuestros clientes de Huelva.</p>
-
         <div class="google-review-placeholder">
           <!-- Placeholder for Google Reviews Widget -->
           <div class="review-card">
