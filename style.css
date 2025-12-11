@@ -41,15 +41,20 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
     border-radius: 50px;
-    text-decoration: none;
     font-weight: 600;
+    text-decoration: none;
     transition: var(--transition);
-    border: none;
     cursor: pointer;
+    border: none;
     font-size: 1rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
 .btn-primary {
@@ -434,7 +439,8 @@ p {
     border-radius: 50px;
     color: var(--primary);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    /* Increased size */
     margin-bottom: 2rem;
     border: 1px solid rgba(240, 90, 26, 0.15);
 }
@@ -804,8 +810,19 @@ p {
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
+    /* Increased from 2.5rem */
     margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.section-header p,
+.subtitle,
+.calendar-subtitle {
+    font-size: 1.25rem;
+    /* Increased from default/1.1rem */
+    line-height: 1.6;
+    color: var(--text-muted);
 }
 
 .calendar-subtitle {
@@ -1164,8 +1181,9 @@ p {
 }
 
 .problem {
-    font-size: 1rem;
-    color: var(--text-muted);
+    color: #e04a4a;
+    font-size: 1.1rem;
+    /* Increased size */
     margin: 0;
 }
 
@@ -1179,10 +1197,9 @@ p {
 }
 
 .consequence {
-    font-size: 1.05rem;
-    /* Larger font size */
     color: var(--text-main);
-    /* White text for better contrast */
+    font-size: 1.1rem;
+    /* Increased size */
     margin: 0;
     line-height: 1.5;
 }
@@ -1210,6 +1227,13 @@ p {
 
 .split-layout.reverse .image-content {
     order: 1;
+}
+
+.split-layout .text-content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    /* Increased size for description texts */
+    line-height: 1.7;
 }
 
 .highlight-subtitle {
@@ -1258,7 +1282,7 @@ p {
 
 .subtitle {
     margin-bottom: 3rem;
-    font-size: 1.1rem;
+    /* font-size handled in section-header group */
 }
 
 .google-review-placeholder {
@@ -1351,6 +1375,18 @@ footer {
         font-size: 2rem;
     }
 
+    .section-header h2 {
+        font-size: 2.2rem;
+        /* Adjusted for mobile */
+    }
+
+    .section-header p,
+    .subtitle,
+    .calendar-subtitle {
+        font-size: 1.1rem;
+        /* Smaller for mobile */
+    }
+
     .navbar {
         flex-direction: row;
         justify-content: space-between;
@@ -1416,7 +1452,8 @@ footer {
 }
 
 .eyebrow {
-    font-size: 0.85rem;
+    font-size: 0.65rem;
+    /* Decreased size */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -1858,7 +1895,8 @@ footer {
 }
 
 .creative-card p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    /* Increased from 0.95rem */
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 2rem;
