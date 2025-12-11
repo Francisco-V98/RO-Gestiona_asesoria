@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestiona Asesoría - Expertos en Campo</title>
+  <meta name="description"
+    content="Asesoría experta en fresa y arándano en Huelva. Planificación fiscal adaptada a tu ciclo productivo.">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/gestiona logo.svg" alt="Gestiona Asesoría" class="logo-img">
+      </div>
+      <div class="nav-links">
+        <a href="#calendar">Calendario</a>
+        <a href="#solutions">Soluciones</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact" class="btn btn-primary small">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+
+      <div class="hero-content">
+        <h1>Tus números y tu campo <span class="highlight">en buenas manos.</span></h1>
+        <p>En Gestiona somos la asesoría experta en fresa y arándano de Huelva. Entendemos tu ciclo productivo para que
+          pagues solo lo justo.</p>
+        <a href="#contact" class="btn btn-primary">Quiero mi Planificación Fiscal</a>
+      </div>
+    </header>
+
+    <!-- Agricultural Calendar Section -->
+    <section id="calendar" class="section calendar-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tu ciclo de cultivo es nuestro <span class="highlight">calendario fiscal.</span></h2>
+          <p>A diferencia de otras asesorías, nosotros no solo vemos facturas. Sabemos que tus grandes gastos
+            (preparación y plantación) suceden en un año, pero los ingresos llegan al siguiente (recolección).
+            <strong>Si tu asesoría no periodifica esos gastos, estás pagando de más.</strong> Nuestro servicio integral
+            garantiza que tu base imponible refleje la realidad de tu trabajo en el campo.
+          </p>
+        </div>
+
+        <div class="calendar-table-container">
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>Meses</th>
+                <th>Actividad Agrícola (Fresa)</th>
+                <th>Implicación Fiscal Clave</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="period">
+                  <div class="period-icon"><i data-lucide="shovel"></i></div>
+                  <span>Julio - Agosto</span>
+                </td>
+                <td>Preparación de la tierra y desinfección.</td>
+                <td>Inicio de la concentración de gastos.</td>
+              </tr>
+              <tr>
+                <td class="period">
+                  <div class="period-icon"><i data-lucide="sprout"></i></div>
+                  <span>Septiembre - Noviembre</span>
+                </td>
+                <td>Plantación y cubrición.</td>
+                <td>La mayoría de los gastos para los ingresos futuros se acumulan aquí.</td>
+              </tr>
+              <tr>
+                <td class="period">
+                  <div class="period-icon"><i data-lucide="flower-2"></i></div>
+                  <span>Diciembre - Enero</span>
+                </td>
+                <td>Inicio de la Recolección.</td>
+                <td>Comienzan los ingresos de la campaña.</td>
+              </tr>
+              <tr>
+                <td class="period">
+                  <div class="period-icon"><i data-lucide="coins"></i></div>
+                  <span>Enero - Mayo/Junio</span>
+                </td>
+                <td>Campaña de Recolección (Ingresos Fuertes).</td>
+                <td class="highlight-cell">Ingresos principales se concentran. <br><strong>Necesidad crítica de
+                    periodificación de gastos del año anterior.</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Errors Section -->
+    <section class="section dark-alt error-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Te suenan estos errores que <span class="highlight">cuestan dinero</span> a los agricultores de Huelva?
+          </h2>
+        </div>
+        <div class="cards-grid">
+          <div class="card error-card">
+            <div class="card-header">
+              <div class="card-icon-styled error">
+                <i data-lucide="alert-triangle"></i>
+              </div>
+              <h3>No entender la periodificación de gastos</h3>
+            </div>
+            <div class="card-body">
+              <div class="problem-box">
+                <p class="problem"><strong>Problema:</strong> Trabajos en curso no contabilizados.</p>
+              </div>
+              <div class="consequence-box">
+                <p class="consequence"><strong>Consecuencia:</strong> Pagar impuestos en exceso, ya que los gastos no se
+                  descuentan correctamente del año de los ingresos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card error-card">
+            <div class="card-header">
+              <div class="card-icon-styled">
+                <i data-lucide="search-x"></i>
+              </div>
+              <h3>Asesoría que no conoce el ciclo productivo</h3>
+            </div>
+            <div class="card-body">
+              <div class="problem-box">
+                <p class="problem"><strong>Problema:</strong> Desconocimiento del sector berries.</p>
+              </div>
+              <div class="consequence-box">
+                <p class="consequence"><strong>Consecuencia:</strong> Malos consejos o estrategias fiscales que no se
+                  adaptan a la realidad de tu negocio (ej. la renovación anual de la fresa).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card error-card">
+            <div class="card-header">
+              <div class="card-icon-styled">
+                <i data-lucide="users"></i>
+              </div>
+              <h3>Falta de cercanía y asesoramiento proactivo</h3>
+            </div>
+            <div class="card-body">
+              <div class="problem-box">
+                <p class="problem"><strong>Problema:</strong> Solo actúan como 'tramitadores'.</p>
+              </div>
+              <div class="consequence-box">
+                <p class="consequence"><strong>Consecuencia:</strong> Dejar pasar oportunidades de planificación fiscal
+                  y solo actuar como 'tramitadores' de documentos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section id="solutions" class="section value-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Somos la asesoría que te da la tranquilidad para <span class="highlight">enfocarte en tu cosecha.</span>
+          </h2>
+        </div>
+        <div class="split-layout">
+          <div class="text-content">
+            <p>En Gestiona, somos <strong>gente de campo</strong> que maneja los números. De PyME a PyME, te ofrecemos
+              un servicio <strong>fiscal y laboral</strong> con la mirada puesta en tu <strong>eficiencia
+                fiscal</strong>. Nuestra promesa es simple: conocimiento profundo del sector y un acompañamiento tan
+              cercano que te sentirás como si tuviéramos las oficinas en tu propia finca.</p>
+
+            <h3 class="highlight-subtitle">Somos expertos en lo que necesitas</h3>
+
+            <ul class="feature-list">
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Planificación fiscal a medida:</strong>
+                  Diseñamos una estrategia que se alinea perfectamente a tu calendario agrícola, asegurando que
+                  optimices cada euro y pagues solo lo necesario.
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Asesoramiento laboral especializado:</strong>
+                  Gestión de los picos de mano de obra y contratos específicos del sector agrícola (fresa y arándano),
+                  para que cumplas sin sorpresas.
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Acompañamiento cercano y proactivo:</strong>
+                  Estamos a tu lado para resolver dudas, anticipar problemas y ofrecerte soluciones antes de que se
+                  conviertan en un dolor de cabeza.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="image-content">
+            <img src="/images/hero-orange-berry.png" alt="Fresas y Arándanos" class="img-responsive rounded-shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <h2>La confianza se <span class="highlight">siembra</span></h2>
+        <p class="subtitle">Esto es lo que dicen nuestros clientes de Huelva.</p>
+
+        <div class="google-review-placeholder">
+          <!-- Placeholder for Google Reviews Widget -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Entienden perfectamente mis tiempos de cosecha y pago. He ahorrado mucho en impuestos."</p>
+            <div class="author">- Cliente Verificado</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Siempre están ahí cuando surge un problema con los contratos de temporada."</p>
+            <div class="author">- Cliente Verificado</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section about-section dark-alt">
+      <div class="container">
+        <div class="split-layout reverse">
+          <div class="text-content">
+            <h2>Expertos en números, <span class="highlight">aliados</span> de quienes cultivan futuro.</h2>
+            <p>No somos la típica gestoría que solo recibe facturas. Entendemos qué significa cada campaña, porque
+              llevamos años trabajando codo a codo con agricultores como tú. Sabemos que tu negocio no son solo papeles,
+              es tu vida y el futuro de tu familia.</p>
+            <a href="#contact" class="btn btn-primary">Hablemos de tu explotación</a>
+          </div>
+          <div class="image-content">
+            <div class="carousel-container rounded-shadow">
+              <div class="carousel-slide active" style="background-image: url('/images/team-working.png');"></div>
+              <div class="carousel-slide" style="background-image: url('/images/team-handshake.png');"></div>
+              <div class="carousel-slide" style="background-image: url('/images/team-meeting.png');"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Tu campaña ya tiene sabor. <br>Trabajemos para que tenga <span class="highlight">mejor rendimiento.</span>
+          </h2>
+
+          <form id="contact-form" class="styled-form">
+            <div class="form-group">
+              <input type="text" placeholder="Nombre" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Correo Electrónico" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Teléfono" />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Agenda una reunión</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Gestiona Asesoría. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
