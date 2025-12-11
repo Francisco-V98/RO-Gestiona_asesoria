@@ -1248,9 +1248,12 @@ footer {
 
 /* Profile Selection Section - Redesigned */
 .profile-section {
-    background: var(--bg-alt);
-    /* Light gray background */
+    background: linear-gradient(-45deg, #f05a1a, #ff8c32, #d04a10, #e87c4d);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .profile-grid {
@@ -1261,6 +1264,17 @@ footer {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Text color adjustments for orange background */
+.profile-section .section-header h2,
+.profile-section .section-header .subtitle {
+    color: white;
+}
+
+.profile-section .section-header .highlight {
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .profile-card {
@@ -1414,12 +1428,8 @@ footer {
 
 /* Creative Services Section */
 .services-section {
-    background: linear-gradient(-45deg, #f05a1a, #ff8c32, #d04a10, #e87c4d);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    background: var(--bg-alt);
     padding: 6rem 0;
-    position: relative;
-    overflow: hidden;
 }
 
 @keyframes gradientBG {
@@ -1446,8 +1456,14 @@ footer {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
-.services-section .subtitle {
-    color: rgba(255, 255, 255, 0.9) !important;
+/* Text color adjustments for light background */
+.services-section .section-header h2,
+.services-section .section-header .subtitle {
+    color: var(--text-main);
+}
+
+.services-section .section-header .highlight {
+    color: var(--primary);
 }
 
 .services-grid-creative {
