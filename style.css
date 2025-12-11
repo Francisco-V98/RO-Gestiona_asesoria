@@ -808,6 +808,10 @@ p {
     margin-bottom: 1.5rem;
 }
 
+.calendar-subtitle {
+    color: white !important;
+}
+
 /* Responsive Table Container */
 .calendar-table-container {
     width: 100%;
@@ -1050,7 +1054,7 @@ p {
 .watermark-container {
     position: absolute;
     top: 50%;
-    left: -35%;
+    left: -45%;
     /* Centered relative to left, slightly overflowing */
     right: auto;
     transform: translateY(-40%) rotate(15deg);
@@ -1071,7 +1075,7 @@ p {
 }
 
 .watermark-container img {
-    width: 200%;
+    width: 250%;
     height: auto;
     display: block;
 }
@@ -1704,7 +1708,7 @@ footer {
 
 /* Creative Services Section */
 .services-section {
-    background: var(--bg-alt);
+    background: var(--bg-light);
     padding: 6rem 0;
 }
 
@@ -1744,10 +1748,10 @@ footer {
 
 .services-grid-creative {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* Force 4 columns */
-    gap: 1.5rem;
-    /* Sligthly smaller gap to fit */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for better spacing */
+    gap: 2rem;
+    /* Larger gap for better visual spacing */
     margin-top: 3rem;
 }
 
